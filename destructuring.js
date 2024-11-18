@@ -14,6 +14,9 @@ const locations = {
 };
 // TODO: The map reveals several locations, but only the first two are significant for the quest. Use object destructuring with the rest parameter to isolate the `first` and `second` locations from the `locations` object, capturing the rest in a variable called `remaining`. Print the key locations.
 
+const { first, second, ...remaining } = locations;
+console.log(`Key Locations: ${first}, ${second}`);
+
 /* Task 3: The Mysterious Door */
 const doorCode = {
   upper: "Alpha",
