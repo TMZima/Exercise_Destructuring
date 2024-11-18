@@ -24,6 +24,10 @@ const doorCode = {
 };
 // TODO: To open the Mysterious Door, a sequence is required, which might be incomplete. Use object destructuring to assign default values to ensure the door opens even if part of the code is missing. Make sure the `middle` defaults to one of the values from the `remaining` variable above if not provided. Print the door code sequence.
 
+const { upper, middle = remaining.third, lower } = doorCode;
+console.log(`Door Code: ${upper}, ${middle}, ${lower}`);
+console.log(remaining.first);
+
 /* Task 4: The Guardian's Riddle */
 const riddle = {
   ancientWord: "Sphinx",
