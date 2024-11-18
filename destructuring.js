@@ -41,6 +41,9 @@ console.log(`Translation: ${translation}`);
 const elements = ["Fire", "Water", "Earth", "Air"];
 // TODO: Inside the library, Destructo discovers an array that represents the elements needed to decipher the next clue. Use array destructuring to extract the first two elements. Print the essential elements.
 
+const [firstElement, secondElement] = elements;
+console.log(`Essential Elements: ${firstElement}, ${secondElement}`);
+
 /* Task 6: Skipping Stones */
 const stones = [1, 2, 3, 4, 5, 6];
 // TODO: Crossing the River of Reflections requires skipping certain stones. Use array destructuring to extract only the first and the sixth stones. Print the extracted stones.
