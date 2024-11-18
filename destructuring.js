@@ -26,7 +26,6 @@ const doorCode = {
 
 const { upper, middle = remaining.third, lower } = doorCode;
 console.log(`Door Code: ${upper}, ${middle}, ${lower}`);
-console.log(remaining.first);
 
 /* Task 4: The Guardian's Riddle */
 const riddle = {
@@ -34,6 +33,9 @@ const riddle = {
   modernWord: "Cat",
 };
 // TODO: The guardian of an ancient library speaks in riddles. Use object destructuring to rename `ancientWord` to `translation` in the `riddle` object. Print the translation of the riddle.
+
+const { ancientWord: translation } = riddle;
+console.log(`Translation: ${translation}`);
 
 /* Task 5: The Array of Elements */
 const elements = ["Fire", "Water", "Earth", "Air"];
